@@ -1,0 +1,76 @@
+
+.login {
+	padding-top: 35%;
+}
+.login_box {
+	width: 80%;
+	padding: 22px 20px 25px;
+	margin: 0 auto;
+	-webkit-box-shadow: 0 0 20px #d9e4e7;
+	        box-shadow: 0 0 20px #d9e4e7;
+	background-color: #fff;
+	border-radius: 4px;
+}
+.login_title {
+	margin-bottom: 40rpx;
+}
+.login_title .login_title_con {
+	font-size: 40rpx;
+	color: #3f95ff;
+}
+.login_title .login_title_versions {
+	color: #bbbbbb;
+}
+.login_sub button {
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	background: #3690ff;
+	color: #ffffff;
+}
+.login_sub.commit button{
+	background: #eee;
+	color:#000000;
+}
+.empty {
+	z-index: 999;
+	position: absolute;
+	right: 10rpx;
+	top: 30rpx;
+	width: 40rpx;
+	height: 40rpx;
+	border-radius: 40rpx;
+	text-align: center;
+	line-height: 40rpx;
+	background: #bebebe;
+	color: #ffffff;
+}
+.login_agreement_layer {
+	color: #3690ff;
+	text-decoration: underline;
+}
+.zidingyi {
+	background-color: #f8f8f8;
+	padding: 80rpx 220rpx;
+}
+.agreement_title {
+	padding: 30rpx 0;
+	font-size: 40rpx;
+}
+.one_title {
+	padding: 30rpx 0;
+}
+.agreement_content {
+	text-indent: 2em;
+}
+.uni-icon.uni-icon-clear:before {
+	font-size: 20px;
+	color: #cccccc;
+}
+.with-fun {
+	height: 40px;
+}
+.uni-input {
+	padding: 10px 0 0 0;
+}
+

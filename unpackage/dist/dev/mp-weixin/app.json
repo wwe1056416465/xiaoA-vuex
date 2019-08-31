@@ -1,0 +1,67 @@
+{
+  "pages": [
+    "pages/tabBar/index/index",
+    "pages/tabBar/task/task",
+    "pages/tabBar/crm/crm",
+    "pages/tabBar/template/template",
+    "pages/tabBar/user/user",
+    "pages/task/addtask",
+    "pages/task/task",
+    "pages/crm/crm",
+    "pages/index/search",
+    "pages/crm/crmSearch",
+    "pages/task/taskSearch",
+    "pages/template/template",
+    "pages/template/tem_detial/tem_de",
+    "pages/template/temlist/temlist",
+    "pages/template/tem_verify/tem_verify",
+    "pages/login/login"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#3690ff",
+    "backgroundColor": "#F8F8F8",
+    "fontWeight": 400
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#007AFF",
+    "borderStyle": "black",
+    "backgroundColor": "#F8F8F8",
+    "list": [
+      {
+        "pagePath": "pages/tabBar/index/index",
+        "iconPath": "static/img/in_re.png",
+        "selectedIconPath": "static/img/in_ac.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/tabBar/task/task",
+        "iconPath": "static/img/task_re.png",
+        "selectedIconPath": "static/img/task_ac.png",
+        "text": "任务"
+      },
+      {
+        "pagePath": "pages/tabBar/crm/crm",
+        "iconPath": "static/img/CRM_re.png",
+        "selectedIconPath": "static/img/CRM_ac.png",
+        "text": "CRM"
+      },
+      {
+        "pagePath": "pages/tabBar/template/template",
+        "iconPath": "static/img/reload_re.png",
+        "selectedIconPath": "static/img/reload_ac.png",
+        "text": "录音"
+      },
+      {
+        "pagePath": "pages/tabBar/user/user",
+        "iconPath": "static/img/user_re.png",
+        "selectedIconPath": "static/img/user_ac.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
+}

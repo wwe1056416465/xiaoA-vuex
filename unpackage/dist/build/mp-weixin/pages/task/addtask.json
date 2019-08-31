@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "新建任务",
+  "usingComponents": {
+    "rui-date-picker": "/components/rattenking-dtpicker/rattenking-dtpicker"
+  }
+}

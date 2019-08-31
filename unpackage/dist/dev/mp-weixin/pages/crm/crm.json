@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "通话流水详情",
+  "usingComponents": {
+    "media-list": "/components/tab-nvue/mediaList",
+    "imt-audio": "/components/imt-audio/imt-audio"
+  }
+}

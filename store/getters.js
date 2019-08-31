@@ -1,0 +1,32 @@
+const getters={
+	queryIndex:state => state.indexInfo.queryIndex,
+	userInfo:state => state.user.userInfo,//用户信息
+	childrenArray:state => state.indexInfo.childrenArray,//子账号数组
+	userids:state => state.indexInfo.userids,//子账号id数组
+	flownames:state => state.indexInfo.flownames,//话术流程名称数组
+	callflowIds:state => state.indexInfo.callflowIds,//话流程id数组
+	showPhones:state => state.indexInfo.showPhones,//主叫号数组
+	mais:state => state.indexInfo.mais,//子账号AI数
+	taskList:state => state.task.taskList,//任务数组
+	analysisData:state => state.task.analysisData,//任务分析
+	Column:state => state.task.Column,//柱状图
+	Ring:state => state.task.Ring,//饼状图
+	taskId:state => state.task.taskId,//任务id
+	taskStatus:state => state.task.taskStatus,//任务状态
+	taskDirectives:state => state.task.taskDirectives,//任务操作指令
+	taskFail:state => state.task.taskFail,//任务失败数量
+	taskQueryCriteria:state => state.task.taskQueryCriteria ,//任务查询条件
+	addTaskFlag:state => state.task.addTaskFlag,//新建任务成功标记
+	loadStatus:state => state.task.loadStatus,//上拉加载显示文本索引
+	crmQueryCriteria:state => state.crm.crmQueryCriteria,//crm查询条件
+	crmList:state => state.crm.crmList,//crm数组
+	crmInfo:state => state.crm.crmInfo,//通话详情用户资料
+	audio:state => state.crm.audio,//整段录音
+	jcdrShow:state => state.crm.jcdrShow,//通话结果
+	recoList:state => state.crm.recoList,//通话记录
+	rprocessList:state => state.recording.rprocessList,//机器人流程列表
+	mainFlowList:state => state.recording.mainFlowList,//主流程列表
+	qustionFlowList:state => state.recording.qustionFlowList,//问题流程列表
+	specialFlowList:state => state.recording.specialFlowList,//特殊流程列表
+}
+export default getters

@@ -1,0 +1,74 @@
+
+.content {
+	padding: 10rpx 30rpx;
+	font-family: 'Segoe UI', 'Lucida Grande', Helvetica, Arial, 'Microsoft YaHei', FreeSans, Arimo, 'Droid Sans', 'wenquanyi micro hei', 'Hiragino Sans GB', 'Hiragino Sans GB W3',
+		FontAwesome, sans-serif;
+}
+.uni-list {
+	background-color: #efefef;
+	font-size: 12px;
+	margin: 25rpx 0;
+	padding: 0;
+	border-radius: 6px;
+}
+.uni-list::before,
+.uni-list::after,
+.uni-input,
+.uni-list-cell::after {
+	background-color: transparent;
+}
+.addcell {
+	height: 40px;
+	line-height: 40px;
+}
+uni-textarea[data-v-becdca92] {
+	padding: 0px;
+}
+.uni-list-cell-db {
+	overflow: hidden;
+	white-space: nowrap;
+}
+.savebutton {
+	background-color: #3690ff;
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	border-radius: 30px;
+	margin-top: 20px;
+}
+.clearfix::before,
+.clearfix::after {
+	content: '';
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+	clear: both;
+}
+.datesearch {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	height: 40px;
+}
+.line {
+	width: 80px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #ddd;
+}
+.se_remarks {
+	font-size: 12px;
+	margin-top: 20px;
+	text-align: center;
+	color: #aaa;
+}
+.uni-input {
+	font-size: 12px;
+}
+.uni-list-cell-left {
+	font-size: 12px;
+}
+

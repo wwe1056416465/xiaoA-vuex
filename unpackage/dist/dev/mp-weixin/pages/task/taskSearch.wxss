@@ -1,0 +1,119 @@
+
+.content {
+	padding: 30rpx;
+	font-family: 'Segoe UI', 'Lucida Grande', Helvetica, Arial, 'Microsoft YaHei', FreeSans, Arimo, 'Droid Sans', 'wenquanyi micro hei', 'Hiragino Sans GB', 'Hiragino Sans GB W3',
+		FontAwesome, sans-serif;
+}
+.icon-red {
+	padding: 0 5rpx;
+	font-size: 12px;
+	color: red;
+}
+.addTack_top {
+	font-size: 12px;
+	color: #888888;
+}
+.uni-list,
+.uni-textarea {
+	background-color: #efefef;
+	font-size: 12px;
+	margin: 25rpx 0;
+	padding: 0;
+	border-radius: 6px;
+}
+.uni-list::before,
+.uni-list::after,
+.uni-input,
+.uni-list-cell::after {
+	background-color: transparent;
+}
+.icon-w {
+	padding: 0 5rpx;
+	font-size: 12px;
+	color: transparent;
+}
+.addcell {
+	height: 40px;
+	line-height: 40px;
+}
+textarea {
+	height: 80px;
+	padding: 10px 0;
+}
+.uni-radio .uni-radio-input {
+	width: 40rpx;
+	height: 40rpx;
+}
+.addradio {
+	float: left;
+	margin-right: 100rpx;
+}
+.textareacell {
+	padding: 10px 0;
+	-webkit-align-items: initial;
+	-ms-flex-align: initial;
+	-webkit-box-align: initial;
+	        align-items: initial;
+}
+.uni-textarea {
+	padding: 0px;
+}
+uni-textarea[data-v-becdca92] {
+	padding: 0px;
+}
+.uni-list-cell-db {
+	overflow: hidden;
+	white-space: nowrap;
+}
+.savebutton {
+	background-color: #3690ff;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	border-radius: 30px;
+	margin-top: 20px;
+}
+.daoruhaoma view {
+	float: left;
+	margin-right: 10px;
+}
+.daoruhaoma_text {
+	font-size: 12px;
+	padding: 0 12px;
+	border-radius: 6px 0px 0px 6px;
+	background-color: #efefef;
+	height: 40px;
+	line-height: 40px;
+}
+.addtaskdown {
+	height: 38px;
+	line-height: 38px;
+	font-size: 12px;
+	color: #0093e6;
+	border: 1px solid #0093e6;
+}
+.daoru {
+	height: 38px;
+	line-height: 38px;
+	font-size: 12px;
+	background-color: #3691ff;
+	color: #fff;
+	border: none;
+}
+.clearfix::before,
+.clearfix::after {
+	content: '';
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+	clear: both;
+}
+.datesearch {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	height: 40px;
+}
+

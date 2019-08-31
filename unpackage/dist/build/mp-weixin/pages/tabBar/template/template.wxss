@@ -1,0 +1,63 @@
+
+page.pages-tabBar-crm-crm uni-page-body,.content{
+	    background-color: #ffffff !important;
+}
+page,
+.content {
+	background-color: #f8f8f8;
+}
+.newslist {
+	padding: 10px;
+	line-height: 60px;
+	font-size: 28px;
+}
+.task_block {
+	padding: 5px 10px;	
+	font-family: 'Helvetica Neue', Helvetica, sans-serif;
+}
+.space10 {
+	height: 10px;
+	background-color: #f5f5f5;
+}
+.task_title {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	padding: 6px 0;
+	font-size: 14px;
+}
+.task {
+	padding: 5px 0px;
+}
+view {
+	font-size: 12px;
+	color: #3c3c3c;
+}
+.task_title .text {
+	font-size: 14px;
+}
+.tip {
+	width: 82px;
+	text-align: right;
+	color: #3C3C3C;
+	font-size: 13px;
+	margin-right: 10px;
+}
+.progress-box {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+	margin-top: 8px;
+}
+.task_con view {
+	margin: 5px 0;
+}
+
+
+

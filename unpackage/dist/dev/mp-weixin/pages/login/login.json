@@ -1,0 +1,6 @@
+{
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "popup-layer": "/components/popup-layer/popup-layer"
+  }
+}

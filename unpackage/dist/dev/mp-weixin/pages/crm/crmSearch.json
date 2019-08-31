@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "通话流水搜索",
+  "usingComponents": {
+    "uni-popup": "/components/uni-popup/uni-popup"
+  }
+}

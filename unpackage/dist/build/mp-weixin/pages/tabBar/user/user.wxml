@@ -1,0 +1,1 @@
+<view class="content" bind:__l="__l"><view class="user"><image src="../../../static/image/user.png"></image><view>{{info.username}}</view><view>{{info.consumer}}</view><view>{{"AI总数:"+info.ai+" | 有效期至:"+info.endtime}}</view></view><view class="space10"></view><view data-event-opts="{{[['tap',[['loginout',['$event']]]]]}}" class="longinout" bindtap="__e">退出登录</view></view>
