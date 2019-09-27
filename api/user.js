@@ -3,9 +3,8 @@ import ajax from './api'
 
 //登入
 export function login(data){	
-	const {username,password,yuming}=data
-	console.log(yuming)
-	return ajax(yuming+'/adminspa/login/login',{username:username,password:password})
+	const {username,password,newyuming}=data
+	return ajax(newyuming+'/adminspa/login/login',{username:username,password:password})
 }
 
 // 登出

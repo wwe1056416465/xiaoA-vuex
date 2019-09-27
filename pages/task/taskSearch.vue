@@ -112,7 +112,8 @@
 			}
 		},
 		onShow() {
-			if(!this.$store.getters.childrenArray){
+			console.log()
+			if(this.$store.getters.childrenArray.length===0){
 				let userid=yh_getStorage('userid')
 				let access_token=getToken()
 				// 获取子账号

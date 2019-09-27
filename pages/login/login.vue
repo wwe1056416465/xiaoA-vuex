@@ -8,19 +8,19 @@
 			<form>
 				<view class="uni-form-item uni-column yuming ">
 					<view class="with-fun border-b">
-						<input class="uni-input " placeholder="请输入域名" :value="loginForm.yuming" @input="clearIp" />
+						<input class="uni-input " placeholder="请输入域名" :value="yuming" @input="clearIp" />
 						<view class="uni-icon uni-icon-clear text_center" v-if="showIp" @click="clearIcon('0')"></view>
 					</view>
 				</view>
 				<view class="uni-form-item uni-column login_username ">
 					<view class="with-fun border-b">
-						<input class="uni-input " placeholder="请输入账号" :value="loginForm.username" @input="clearInput" />
+						<input class="uni-input " placeholder="请输入账号" :value="username" @input="clearInput" />
 						<view class="uni-icon uni-icon-clear text_center" v-if="showClearIcon" @click="clearIcon('1')"></view>
 					</view>
 				</view>
 				<view class="uni-form-item uni-column login_pws margin-b30">
 					<view class="with-fun border-b">
-						<input type="password" class="uni-input " placeholder="请输入密码" :value="loginForm.password" @input="clearpws" />
+						<input type="password" class="uni-input " placeholder="请输入密码" :value="password" @input="clearpws" />
 						<view class="uni-icon uni-icon-clear text_center" v-if="showPasswordL" @click="clearIcon('2')"></view>
 					</view>
 				</view>
@@ -204,8 +204,7 @@
 <script>
 	// 映射vuex
 	import popupLayer from '@/components/popup-layer/popup-layer.vue';
-	import ajax from '../../common/api.js';
-	import {getYuMing} from '@/utils/auth.js'
+	import {getYuMing,yh_getStorage} from '@/utils/auth.js'
 	export default {
 		components: {
 			//注册为组件标签
@@ -214,10 +213,11 @@
 		data() {
 			return {
 				loginForm:{
-					username:6221,
-					password:123456,
-					yuming:getYuMing()||''
+					
 				},
+				username:6221,
+				password:123456,
+				yuming:yh_getStorage('yuanshiyuming')||'',
 				direction: 'top',
 				title: 'CRM',
 				checked: '',
@@ -235,7 +235,7 @@
 			},
 			// 显示清空账号输入框内容图标
 			clearInput: function(event) {
-				this.loginForm.username = event.target.value;
+				this.username = event.target.value;
 				if (event.target.value.length > 0) {
 					this.showClearIcon = true;
 				} else {
@@ -244,7 +244,7 @@
 			},
 			// 显示清空密码输入框内容图标
 			clearpws: function(event) {
-				this.loginForm.password = event.target.value;
+				this.password = event.target.value;
 				if (event.target.value.length > 0) {
 					this.showPasswordL = true;
 				} else {
@@ -252,8 +252,7 @@
 				}
 			},
 			clearIp:function(event){
-				this.loginForm.yuming = event.target.value;
-				console.log(this.loginForm.yuming)
+				this.yuming = event.target.value;
 				if (event.target.value.length > 0) {
 					this.showIp = true;
 				} else {
@@ -289,7 +288,7 @@
 			// 登入方法
 			loginto() {
 				this.isCommit=true;
-				const {yuming,username,password}=this.loginForm
+				const {yuming,username,password}=this
 				// 前端验证表单
 				if (!yuming) {
 					this.validate('请输入域名')
@@ -300,14 +299,17 @@
 				}else if(!this.flag){
 					this.validate('请阅读并同意小A智能客服用户协议')
 				}
-				// 域名处理为 https://前缀
-				if(this.loginForm.yuming.indexOf('https://')==-1){
-					this.loginForm.yuming='https://'+ this.loginForm.yuming;
-				}
 				// 域名保存本地
-				uni.setStorageSync('yuming', this.loginForm.yuming);
+				const yuanshiyuming=yuming
+				uni.setStorageSync('yuanshiyuming', yuanshiyuming);
+				// 域名处理为 https://前缀
+				let newyuming=yuming
+				if(newyuming.indexOf('https://')==-1){// 用户不输入前缀
+					newyuming='https://'+ newyuming;
+				}
+				uni.setStorageSync('yuming', newyuming);
 				
-				this.$store.dispatch('user/login',this.loginForm).then(res=>{
+				this.$store.dispatch('user/login',{newyuming,username,password}).then(res=>{
 					console.log(res,'登入页请求成功')
 					if(res.data.code===1){
 						uni.showToast({

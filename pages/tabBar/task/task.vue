@@ -111,9 +111,10 @@
 				return this.$store.getters.loadStatus
 			}
 		},
-		onLoad(){
-			this.loadData('refresh')
-		},
+		// onLoad(){
+		// 	console.log('os');
+		// 	this.loadData('refresh')
+		// },
 		onShow(){
 			if(this.$store.getters.addTaskFlag){
 				this.loadData('refresh')

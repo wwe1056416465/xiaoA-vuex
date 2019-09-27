@@ -1,5 +1,6 @@
 import {login,logout,reqInitdata,reqUserInfo} from '@/api/user.js'
 import {setStorageSync,getToken,removeToken,yh_removeStorage} from '@/utils/auth.js'
+import  data from "@/utils/demo.js"
 
 const state = {
   token: getToken(),
@@ -31,9 +32,9 @@ const actions={
 	},
 	// 登出
 	logout({commit,state}){
-	
+		return new Promise((resolve,reject)=>{
 			logout(getToken()).then(res=>{
-				console.log(res,'deng')
+				resolve(res)
 				removeToken()
 				yh_removeStorage('usertype')
 				commit('SET_TOKEN','')
@@ -41,6 +42,7 @@ const actions={
 					url: '/pages/login/login'
 				});
 			})
+		})
 	},
 	// 初始化信息
 	getinitdata({dispatch,state},reqData){

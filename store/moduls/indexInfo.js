@@ -2,12 +2,12 @@ import {reqIndexInfo,reqChildren,reqCallflow} from '@/api/indexInfo.js'
 
 const state={
 	indexInfo:null,//首页信息
-	childrenArray:null,//子账号
-	userids:null,//userids
-	flownames:null,//话术模板名称
-	callflowIds:null,//话术模板id
-	showPhones:null,//主叫号
-	mais:null,//AI数
+	childrenArray:[],//子账号
+	userids:[],//userids
+	flownames:[],//话术模板名称
+	callflowIds:[],//话术模板id
+	showPhones:[],//主叫号
+	mais:[],//AI数
 	queryIndex:null
 }
 

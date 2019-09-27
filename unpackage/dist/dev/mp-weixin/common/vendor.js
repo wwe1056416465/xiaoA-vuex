@@ -1,9 +1,9 @@
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push([["common/vendor"],{
 
-/***/ "../../../../xiaoAweb - demo/api/api.js":
-/*!*************************************!*\
-  !*** D:/xiaoAweb - demo/api/api.js ***!
-  \*************************************/
+/***/ "../../../../xiaoA-vuex/api/api.js":
+/*!********************************!*\
+  !*** D:/xiaoA-vuex/api/api.js ***!
+  \********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19,7 +19,7 @@
 
 
 
-var _auth = __webpack_require__(/*! @/utils/auth.js */ "../../../../xiaoAweb - demo/utils/auth.js"); /*
+var _auth = __webpack_require__(/*! @/utils/auth.js */ "../../../../xiaoA-vuex/utils/auth.js"); /*
                                         ajax 请求函数模块
                                         */ /**
                                             * 向外部暴漏一个函数 ajax
@@ -126,15 +126,15 @@ function resHandle(res, resolve) {
 
 /***/ }),
 
-/***/ "../../../../xiaoAweb - demo/api/crm.js":
-/*!*************************************!*\
-  !*** D:/xiaoAweb - demo/api/crm.js ***!
-  \*************************************/
+/***/ "../../../../xiaoA-vuex/api/crm.js":
+/*!********************************!*\
+  !*** D:/xiaoA-vuex/api/crm.js ***!
+  \********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.reqCrmHistory = reqCrmHistory;exports.reqShowInfo = reqShowInfo;exports.reqJcdrInfo = reqJcdrInfo;exports.reqSeeSess = reqSeeSess;var _api = _interopRequireDefault(__webpack_require__(/*! ./api.js */ "../../../../xiaoAweb - demo/api/api.js"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+Object.defineProperty(exports, "__esModule", { value: true });exports.reqCrmHistory = reqCrmHistory;exports.reqShowInfo = reqShowInfo;exports.reqJcdrInfo = reqJcdrInfo;exports.reqSeeSess = reqSeeSess;var _api = _interopRequireDefault(__webpack_require__(/*! ./api.js */ "../../../../xiaoA-vuex/api/api.js"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
 // crm首页列表
 function reqCrmHistory(data) {
@@ -155,16 +155,16 @@ function reqSeeSess(data) {
 
 /***/ }),
 
-/***/ "../../../../xiaoAweb - demo/api/indexInfo.js":
-/*!*******************************************!*\
-  !*** D:/xiaoAweb - demo/api/indexInfo.js ***!
-  \*******************************************/
+/***/ "../../../../xiaoA-vuex/api/indexInfo.js":
+/*!**************************************!*\
+  !*** D:/xiaoA-vuex/api/indexInfo.js ***!
+  \**************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });exports.reqIndexInfo = reqIndexInfo;exports.reqChildren = reqChildren;exports.reqCallflow = reqCallflow;
-var _api = _interopRequireDefault(__webpack_require__(/*! ./api */ "../../../../xiaoAweb - demo/api/api.js"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} // 引入请求函数
+var _api = _interopRequireDefault(__webpack_require__(/*! ./api */ "../../../../xiaoA-vuex/api/api.js"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} // 引入请求函数
 
 // 获取首页信息
 function reqIndexInfo(indexIata) {var
@@ -184,15 +184,15 @@ function reqCallflow(data) {var
 
 /***/ }),
 
-/***/ "../../../../xiaoAweb - demo/api/recording.js":
-/*!*******************************************!*\
-  !*** D:/xiaoAweb - demo/api/recording.js ***!
-  \*******************************************/
+/***/ "../../../../xiaoA-vuex/api/recording.js":
+/*!**************************************!*\
+  !*** D:/xiaoA-vuex/api/recording.js ***!
+  \**************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.reqRprocess = reqRprocess;exports.reqMainFlow = reqMainFlow;exports.reqQuestions = reqQuestions;exports.reqSpecil = reqSpecil;exports.reqUpvoice = reqUpvoice;exports.reqSubAccountAudio = reqSubAccountAudio;exports.reqJumpTargets = reqJumpTargets;exports.reqNodeInfo = reqNodeInfo;exports.reqOneInfoById = reqOneInfoById;exports.reqAddVoice = reqAddVoice;var _api = _interopRequireDefault(__webpack_require__(/*! ./api.js */ "../../../../xiaoAweb - demo/api/api.js"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+Object.defineProperty(exports, "__esModule", { value: true });exports.reqRprocess = reqRprocess;exports.reqMainFlow = reqMainFlow;exports.reqQuestions = reqQuestions;exports.reqSpecil = reqSpecil;exports.reqUpvoice = reqUpvoice;exports.reqSubAccountAudio = reqSubAccountAudio;exports.reqJumpTargets = reqJumpTargets;exports.reqNodeInfo = reqNodeInfo;exports.reqOneInfoById = reqOneInfoById;exports.reqAddVoice = reqAddVoice;var _api = _interopRequireDefault(__webpack_require__(/*! ./api.js */ "../../../../xiaoA-vuex/api/api.js"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 // 机器人流程列表
 function reqRprocess(data) {
   return (0, _api.default)('/adminspa/Rprocess/index', data);
@@ -238,15 +238,15 @@ function reqAddVoice(data) {
 
 /***/ }),
 
-/***/ "../../../../xiaoAweb - demo/api/task.js":
-/*!**************************************!*\
-  !*** D:/xiaoAweb - demo/api/task.js ***!
-  \**************************************/
+/***/ "../../../../xiaoA-vuex/api/task.js":
+/*!*********************************!*\
+  !*** D:/xiaoA-vuex/api/task.js ***!
+  \*********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.reaTqskInfo = reaTqskInfo;exports.reqMarkanalysisinfo = reqMarkanalysisinfo;exports.reqStop = reqStop;exports.reqRestartTask = reqRestartTask;exports.reqRecall = reqRecall;exports.reqDeleteM = reqDeleteM;exports.reqAddTask = reqAddTask;var _api = _interopRequireDefault(__webpack_require__(/*! ./api */ "../../../../xiaoAweb - demo/api/api.js"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+Object.defineProperty(exports, "__esModule", { value: true });exports.reaTqskInfo = reaTqskInfo;exports.reqMarkanalysisinfo = reqMarkanalysisinfo;exports.reqStop = reqStop;exports.reqRestartTask = reqRestartTask;exports.reqRecall = reqRecall;exports.reqDeleteM = reqDeleteM;exports.reqAddTask = reqAddTask;var _api = _interopRequireDefault(__webpack_require__(/*! ./api */ "../../../../xiaoA-vuex/api/api.js"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 // 任务首页信息
 function reaTqskInfo(data) {
   return (0, _api.default)('/adminspa/marketing/index.html', data);
@@ -278,22 +278,21 @@ function reqAddTask(data) {
 
 /***/ }),
 
-/***/ "../../../../xiaoAweb - demo/api/user.js":
-/*!**************************************!*\
-  !*** D:/xiaoAweb - demo/api/user.js ***!
-  \**************************************/
+/***/ "../../../../xiaoA-vuex/api/user.js":
+/*!*********************************!*\
+  !*** D:/xiaoA-vuex/api/user.js ***!
+  \*********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });exports.login = login;exports.logout = logout;exports.reqInitdata = reqInitdata;exports.reqUserInfo = reqUserInfo;exports.reqChildList = reqChildList;
-var _api = _interopRequireDefault(__webpack_require__(/*! ./api */ "../../../../xiaoAweb - demo/api/api.js"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} // 引入请求函数
+var _api = _interopRequireDefault(__webpack_require__(/*! ./api */ "../../../../xiaoA-vuex/api/api.js"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} // 引入请求函数
 
 //登入
 function login(data) {var
-  username = data.username,password = data.password,yuming = data.yuming;
-  console.log(yuming);
-  return (0, _api.default)(yuming + '/adminspa/login/login', { username: username, password: password });
+  username = data.username,password = data.password,newyuming = data.newyuming;
+  return (0, _api.default)(newyuming + '/adminspa/login/login', { username: username, password: password });
 }
 
 // 登出
@@ -317,10 +316,10 @@ function reqChildList(data) {
 
 /***/ }),
 
-/***/ "../../../../xiaoAweb - demo/common/api.js":
-/*!****************************************!*\
-  !*** D:/xiaoAweb - demo/common/api.js ***!
-  \****************************************/
+/***/ "../../../../xiaoA-vuex/common/api.js":
+/*!***********************************!*\
+  !*** D:/xiaoA-vuex/common/api.js ***!
+  \***********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -405,10 +404,10 @@ function ajax() {var url = arguments.length > 0 && arguments[0] !== undefined ? 
 
 /***/ }),
 
-/***/ "../../../../xiaoAweb - demo/common/moment.min.js":
-/*!***********************************************!*\
-  !*** D:/xiaoAweb - demo/common/moment.min.js ***!
-  \***********************************************/
+/***/ "../../../../xiaoA-vuex/common/moment.min.js":
+/*!******************************************!*\
+  !*** D:/xiaoA-vuex/common/moment.min.js ***!
+  \******************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -418,10 +417,10 @@ function ajax() {var url = arguments.length > 0 && arguments[0] !== undefined ? 
 
 /***/ }),
 
-/***/ "../../../../xiaoAweb - demo/components/rattenking-dtpicker/GetDate.js":
-/*!********************************************************************!*\
-  !*** D:/xiaoAweb - demo/components/rattenking-dtpicker/GetDate.js ***!
-  \********************************************************************/
+/***/ "../../../../xiaoA-vuex/components/rattenking-dtpicker/GetDate.js":
+/*!***************************************************************!*\
+  !*** D:/xiaoA-vuex/components/rattenking-dtpicker/GetDate.js ***!
+  \***************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -596,10 +595,10 @@ module.exports = GetDate;
 
 /***/ }),
 
-/***/ "../../../../xiaoAweb - demo/components/u-charts/u-charts.js":
-/*!**********************************************************!*\
-  !*** D:/xiaoAweb - demo/components/u-charts/u-charts.js ***!
-  \**********************************************************/
+/***/ "../../../../xiaoA-vuex/components/u-charts/u-charts.js":
+/*!*****************************************************!*\
+  !*** D:/xiaoA-vuex/components/u-charts/u-charts.js ***!
+  \*****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4132,18 +4131,18 @@ module.exports = Charts;
 
 /***/ }),
 
-/***/ "../../../../xiaoAweb - demo/main.js":
-/*!**********************************!*\
-  !*** D:/xiaoAweb - demo/main.js ***!
-  \**********************************/
+/***/ "../../../../xiaoA-vuex/main.js":
+/*!*****************************!*\
+  !*** D:/xiaoA-vuex/main.js ***!
+  \*****************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createApp) {__webpack_require__(/*! uni-pages */ "../../../../xiaoAweb - demo/pages.json");
+/* WEBPACK VAR INJECTION */(function(createApp) {__webpack_require__(/*! uni-pages */ "../../../../xiaoA-vuex/pages.json");
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _App = _interopRequireDefault(__webpack_require__(/*! ./App */ "../../../../xiaoAweb - demo/App.vue"));
-var _store = _interopRequireDefault(__webpack_require__(/*! ./store */ "../../../../xiaoAweb - demo/store/index.js"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};var ownKeys = Object.keys(source);if (typeof Object.getOwnPropertySymbols === 'function') {ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {return Object.getOwnPropertyDescriptor(source, sym).enumerable;}));}ownKeys.forEach(function (key) {_defineProperty(target, key, source[key]);});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}
+var _App = _interopRequireDefault(__webpack_require__(/*! ./App */ "../../../../xiaoA-vuex/App.vue"));
+var _store = _interopRequireDefault(__webpack_require__(/*! ./store */ "../../../../xiaoA-vuex/store/index.js"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};var ownKeys = Object.keys(source);if (typeof Object.getOwnPropertySymbols === 'function') {ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {return Object.getOwnPropertyDescriptor(source, sym).enumerable;}));}ownKeys.forEach(function (key) {_defineProperty(target, key, source[key]);});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}
 _vue.default.config.productionTip = false;
 // Vue.prototype.$url = "https://aiplus.xiaoa8.com/";
 _vue.default.prototype.$store = _store.default;
@@ -4161,282 +4160,282 @@ createApp(app).$mount();
 
 /***/ }),
 
-/***/ "../../../../xiaoAweb - demo/main.js?{\"page\":\"pages%2Fcrm%2Fcrm\"}":
-/*!***************************************************************!*\
-  !*** D:/xiaoAweb - demo/main.js?{"page":"pages%2Fcrm%2Fcrm"} ***!
-  \***************************************************************/
+/***/ "../../../../xiaoA-vuex/main.js?{\"page\":\"pages%2Fcrm%2Fcrm\"}":
+/*!**********************************************************!*\
+  !*** D:/xiaoA-vuex/main.js?{"page":"pages%2Fcrm%2Fcrm"} ***!
+  \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../xiaoAweb - demo/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../xiaoA-vuex/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _crm = _interopRequireDefault(__webpack_require__(/*! ./pages/crm/crm.vue */ "../../../../xiaoAweb - demo/pages/crm/crm.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _crm = _interopRequireDefault(__webpack_require__(/*! ./pages/crm/crm.vue */ "../../../../xiaoA-vuex/pages/crm/crm.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_crm.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ "./node_modules/@dcloudio/uni-mp-weixin/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../../../xiaoAweb - demo/main.js?{\"page\":\"pages%2Fcrm%2FcrmSearch\"}":
-/*!*********************************************************************!*\
-  !*** D:/xiaoAweb - demo/main.js?{"page":"pages%2Fcrm%2FcrmSearch"} ***!
-  \*********************************************************************/
+/***/ "../../../../xiaoA-vuex/main.js?{\"page\":\"pages%2Fcrm%2FcrmSearch\"}":
+/*!****************************************************************!*\
+  !*** D:/xiaoA-vuex/main.js?{"page":"pages%2Fcrm%2FcrmSearch"} ***!
+  \****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../xiaoAweb - demo/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../xiaoA-vuex/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _crmSearch = _interopRequireDefault(__webpack_require__(/*! ./pages/crm/crmSearch.vue */ "../../../../xiaoAweb - demo/pages/crm/crmSearch.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _crmSearch = _interopRequireDefault(__webpack_require__(/*! ./pages/crm/crmSearch.vue */ "../../../../xiaoA-vuex/pages/crm/crmSearch.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_crmSearch.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ "./node_modules/@dcloudio/uni-mp-weixin/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../../../xiaoAweb - demo/main.js?{\"page\":\"pages%2Findex%2Fsearch\"}":
-/*!********************************************************************!*\
-  !*** D:/xiaoAweb - demo/main.js?{"page":"pages%2Findex%2Fsearch"} ***!
-  \********************************************************************/
+/***/ "../../../../xiaoA-vuex/main.js?{\"page\":\"pages%2Findex%2Fsearch\"}":
+/*!***************************************************************!*\
+  !*** D:/xiaoA-vuex/main.js?{"page":"pages%2Findex%2Fsearch"} ***!
+  \***************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../xiaoAweb - demo/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../xiaoA-vuex/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _search = _interopRequireDefault(__webpack_require__(/*! ./pages/index/search.vue */ "../../../../xiaoAweb - demo/pages/index/search.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _search = _interopRequireDefault(__webpack_require__(/*! ./pages/index/search.vue */ "../../../../xiaoA-vuex/pages/index/search.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_search.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ "./node_modules/@dcloudio/uni-mp-weixin/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../../../xiaoAweb - demo/main.js?{\"page\":\"pages%2Flogin%2Flogin\"}":
-/*!*******************************************************************!*\
-  !*** D:/xiaoAweb - demo/main.js?{"page":"pages%2Flogin%2Flogin"} ***!
-  \*******************************************************************/
+/***/ "../../../../xiaoA-vuex/main.js?{\"page\":\"pages%2Flogin%2Flogin\"}":
+/*!**************************************************************!*\
+  !*** D:/xiaoA-vuex/main.js?{"page":"pages%2Flogin%2Flogin"} ***!
+  \**************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../xiaoAweb - demo/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../xiaoA-vuex/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _login = _interopRequireDefault(__webpack_require__(/*! ./pages/login/login.vue */ "../../../../xiaoAweb - demo/pages/login/login.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _login = _interopRequireDefault(__webpack_require__(/*! ./pages/login/login.vue */ "../../../../xiaoA-vuex/pages/login/login.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_login.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ "./node_modules/@dcloudio/uni-mp-weixin/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../../../xiaoAweb - demo/main.js?{\"page\":\"pages%2FtabBar%2Fcrm%2Fcrm\"}":
-/*!************************************************************************!*\
-  !*** D:/xiaoAweb - demo/main.js?{"page":"pages%2FtabBar%2Fcrm%2Fcrm"} ***!
-  \************************************************************************/
+/***/ "../../../../xiaoA-vuex/main.js?{\"page\":\"pages%2FtabBar%2Fcrm%2Fcrm\"}":
+/*!*******************************************************************!*\
+  !*** D:/xiaoA-vuex/main.js?{"page":"pages%2FtabBar%2Fcrm%2Fcrm"} ***!
+  \*******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../xiaoAweb - demo/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../xiaoA-vuex/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _crm = _interopRequireDefault(__webpack_require__(/*! ./pages/tabBar/crm/crm.vue */ "../../../../xiaoAweb - demo/pages/tabBar/crm/crm.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _crm = _interopRequireDefault(__webpack_require__(/*! ./pages/tabBar/crm/crm.vue */ "../../../../xiaoA-vuex/pages/tabBar/crm/crm.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_crm.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ "./node_modules/@dcloudio/uni-mp-weixin/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../../../xiaoAweb - demo/main.js?{\"page\":\"pages%2FtabBar%2Findex%2Findex\"}":
-/*!****************************************************************************!*\
-  !*** D:/xiaoAweb - demo/main.js?{"page":"pages%2FtabBar%2Findex%2Findex"} ***!
-  \****************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../xiaoAweb - demo/pages.json");
-
-var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _index = _interopRequireDefault(__webpack_require__(/*! ./pages/tabBar/index/index.vue */ "../../../../xiaoAweb - demo/pages/tabBar/index/index.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
-createPage(_index.default);
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ "./node_modules/@dcloudio/uni-mp-weixin/dist/index.js")["createPage"]))
-
-/***/ }),
-
-/***/ "../../../../xiaoAweb - demo/main.js?{\"page\":\"pages%2FtabBar%2Ftask%2Ftask\"}":
-/*!**************************************************************************!*\
-  !*** D:/xiaoAweb - demo/main.js?{"page":"pages%2FtabBar%2Ftask%2Ftask"} ***!
-  \**************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../xiaoAweb - demo/pages.json");
-
-var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _task = _interopRequireDefault(__webpack_require__(/*! ./pages/tabBar/task/task.vue */ "../../../../xiaoAweb - demo/pages/tabBar/task/task.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
-createPage(_task.default);
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ "./node_modules/@dcloudio/uni-mp-weixin/dist/index.js")["createPage"]))
-
-/***/ }),
-
-/***/ "../../../../xiaoAweb - demo/main.js?{\"page\":\"pages%2FtabBar%2Ftemplate%2Ftemplate\"}":
-/*!**********************************************************************************!*\
-  !*** D:/xiaoAweb - demo/main.js?{"page":"pages%2FtabBar%2Ftemplate%2Ftemplate"} ***!
-  \**********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../xiaoAweb - demo/pages.json");
-
-var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _template = _interopRequireDefault(__webpack_require__(/*! ./pages/tabBar/template/template.vue */ "../../../../xiaoAweb - demo/pages/tabBar/template/template.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
-createPage(_template.default);
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ "./node_modules/@dcloudio/uni-mp-weixin/dist/index.js")["createPage"]))
-
-/***/ }),
-
-/***/ "../../../../xiaoAweb - demo/main.js?{\"page\":\"pages%2FtabBar%2Fuser%2Fuser\"}":
-/*!**************************************************************************!*\
-  !*** D:/xiaoAweb - demo/main.js?{"page":"pages%2FtabBar%2Fuser%2Fuser"} ***!
-  \**************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../xiaoAweb - demo/pages.json");
-
-var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _user = _interopRequireDefault(__webpack_require__(/*! ./pages/tabBar/user/user.vue */ "../../../../xiaoAweb - demo/pages/tabBar/user/user.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
-createPage(_user.default);
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ "./node_modules/@dcloudio/uni-mp-weixin/dist/index.js")["createPage"]))
-
-/***/ }),
-
-/***/ "../../../../xiaoAweb - demo/main.js?{\"page\":\"pages%2Ftask%2Faddtask\"}":
-/*!********************************************************************!*\
-  !*** D:/xiaoAweb - demo/main.js?{"page":"pages%2Ftask%2Faddtask"} ***!
-  \********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../xiaoAweb - demo/pages.json");
-
-var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _addtask = _interopRequireDefault(__webpack_require__(/*! ./pages/task/addtask.vue */ "../../../../xiaoAweb - demo/pages/task/addtask.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
-createPage(_addtask.default);
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ "./node_modules/@dcloudio/uni-mp-weixin/dist/index.js")["createPage"]))
-
-/***/ }),
-
-/***/ "../../../../xiaoAweb - demo/main.js?{\"page\":\"pages%2Ftask%2Ftask\"}":
-/*!*****************************************************************!*\
-  !*** D:/xiaoAweb - demo/main.js?{"page":"pages%2Ftask%2Ftask"} ***!
-  \*****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../xiaoAweb - demo/pages.json");
-
-var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _task = _interopRequireDefault(__webpack_require__(/*! ./pages/task/task.vue */ "../../../../xiaoAweb - demo/pages/task/task.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
-createPage(_task.default);
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ "./node_modules/@dcloudio/uni-mp-weixin/dist/index.js")["createPage"]))
-
-/***/ }),
-
-/***/ "../../../../xiaoAweb - demo/main.js?{\"page\":\"pages%2Ftask%2FtaskSearch\"}":
+/***/ "../../../../xiaoA-vuex/main.js?{\"page\":\"pages%2FtabBar%2Findex%2Findex\"}":
 /*!***********************************************************************!*\
-  !*** D:/xiaoAweb - demo/main.js?{"page":"pages%2Ftask%2FtaskSearch"} ***!
+  !*** D:/xiaoA-vuex/main.js?{"page":"pages%2FtabBar%2Findex%2Findex"} ***!
   \***********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../xiaoAweb - demo/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../xiaoA-vuex/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _taskSearch = _interopRequireDefault(__webpack_require__(/*! ./pages/task/taskSearch.vue */ "../../../../xiaoAweb - demo/pages/task/taskSearch.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
-createPage(_taskSearch.default);
+var _index = _interopRequireDefault(__webpack_require__(/*! ./pages/tabBar/index/index.vue */ "../../../../xiaoA-vuex/pages/tabBar/index/index.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+createPage(_index.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ "./node_modules/@dcloudio/uni-mp-weixin/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../../../xiaoAweb - demo/main.js?{\"page\":\"pages%2Ftemplate%2Ftem_detial%2Ftem_de\"}":
-/*!************************************************************************************!*\
-  !*** D:/xiaoAweb - demo/main.js?{"page":"pages%2Ftemplate%2Ftem_detial%2Ftem_de"} ***!
-  \************************************************************************************/
+/***/ "../../../../xiaoA-vuex/main.js?{\"page\":\"pages%2FtabBar%2Ftask%2Ftask\"}":
+/*!*********************************************************************!*\
+  !*** D:/xiaoA-vuex/main.js?{"page":"pages%2FtabBar%2Ftask%2Ftask"} ***!
+  \*********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../xiaoAweb - demo/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../xiaoA-vuex/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _tem_de = _interopRequireDefault(__webpack_require__(/*! ./pages/template/tem_detial/tem_de.vue */ "../../../../xiaoAweb - demo/pages/template/tem_detial/tem_de.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
-createPage(_tem_de.default);
+var _task = _interopRequireDefault(__webpack_require__(/*! ./pages/tabBar/task/task.vue */ "../../../../xiaoA-vuex/pages/tabBar/task/task.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+createPage(_task.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ "./node_modules/@dcloudio/uni-mp-weixin/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../../../xiaoAweb - demo/main.js?{\"page\":\"pages%2Ftemplate%2Ftem_verify%2Ftem_verify\"}":
-/*!****************************************************************************************!*\
-  !*** D:/xiaoAweb - demo/main.js?{"page":"pages%2Ftemplate%2Ftem_verify%2Ftem_verify"} ***!
-  \****************************************************************************************/
+/***/ "../../../../xiaoA-vuex/main.js?{\"page\":\"pages%2FtabBar%2Ftemplate%2Ftemplate\"}":
+/*!*****************************************************************************!*\
+  !*** D:/xiaoA-vuex/main.js?{"page":"pages%2FtabBar%2Ftemplate%2Ftemplate"} ***!
+  \*****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../xiaoAweb - demo/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../xiaoA-vuex/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _tem_verify = _interopRequireDefault(__webpack_require__(/*! ./pages/template/tem_verify/tem_verify.vue */ "../../../../xiaoAweb - demo/pages/template/tem_verify/tem_verify.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
-createPage(_tem_verify.default);
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ "./node_modules/@dcloudio/uni-mp-weixin/dist/index.js")["createPage"]))
-
-/***/ }),
-
-/***/ "../../../../xiaoAweb - demo/main.js?{\"page\":\"pages%2Ftemplate%2Ftemlist%2Ftemlist\"}":
-/*!**********************************************************************************!*\
-  !*** D:/xiaoAweb - demo/main.js?{"page":"pages%2Ftemplate%2Ftemlist%2Ftemlist"} ***!
-  \**********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../xiaoAweb - demo/pages.json");
-
-var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _temlist = _interopRequireDefault(__webpack_require__(/*! ./pages/template/temlist/temlist.vue */ "../../../../xiaoAweb - demo/pages/template/temlist/temlist.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
-createPage(_temlist.default);
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ "./node_modules/@dcloudio/uni-mp-weixin/dist/index.js")["createPage"]))
-
-/***/ }),
-
-/***/ "../../../../xiaoAweb - demo/main.js?{\"page\":\"pages%2Ftemplate%2Ftemplate\"}":
-/*!*************************************************************************!*\
-  !*** D:/xiaoAweb - demo/main.js?{"page":"pages%2Ftemplate%2Ftemplate"} ***!
-  \*************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../xiaoAweb - demo/pages.json");
-
-var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _template = _interopRequireDefault(__webpack_require__(/*! ./pages/template/template.vue */ "../../../../xiaoAweb - demo/pages/template/template.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _template = _interopRequireDefault(__webpack_require__(/*! ./pages/tabBar/template/template.vue */ "../../../../xiaoA-vuex/pages/tabBar/template/template.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_template.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ "./node_modules/@dcloudio/uni-mp-weixin/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../../../xiaoAweb - demo/pages.json":
-/*!*************************************!*\
-  !*** D:/xiaoAweb - demo/pages.json ***!
-  \*************************************/
+/***/ "../../../../xiaoA-vuex/main.js?{\"page\":\"pages%2FtabBar%2Fuser%2Fuser\"}":
+/*!*********************************************************************!*\
+  !*** D:/xiaoA-vuex/main.js?{"page":"pages%2FtabBar%2Fuser%2Fuser"} ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../xiaoA-vuex/pages.json");
+
+var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
+var _user = _interopRequireDefault(__webpack_require__(/*! ./pages/tabBar/user/user.vue */ "../../../../xiaoA-vuex/pages/tabBar/user/user.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+createPage(_user.default);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ "./node_modules/@dcloudio/uni-mp-weixin/dist/index.js")["createPage"]))
+
+/***/ }),
+
+/***/ "../../../../xiaoA-vuex/main.js?{\"page\":\"pages%2Ftask%2Faddtask\"}":
+/*!***************************************************************!*\
+  !*** D:/xiaoA-vuex/main.js?{"page":"pages%2Ftask%2Faddtask"} ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../xiaoA-vuex/pages.json");
+
+var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
+var _addtask = _interopRequireDefault(__webpack_require__(/*! ./pages/task/addtask.vue */ "../../../../xiaoA-vuex/pages/task/addtask.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+createPage(_addtask.default);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ "./node_modules/@dcloudio/uni-mp-weixin/dist/index.js")["createPage"]))
+
+/***/ }),
+
+/***/ "../../../../xiaoA-vuex/main.js?{\"page\":\"pages%2Ftask%2Ftask\"}":
+/*!************************************************************!*\
+  !*** D:/xiaoA-vuex/main.js?{"page":"pages%2Ftask%2Ftask"} ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../xiaoA-vuex/pages.json");
+
+var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
+var _task = _interopRequireDefault(__webpack_require__(/*! ./pages/task/task.vue */ "../../../../xiaoA-vuex/pages/task/task.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+createPage(_task.default);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ "./node_modules/@dcloudio/uni-mp-weixin/dist/index.js")["createPage"]))
+
+/***/ }),
+
+/***/ "../../../../xiaoA-vuex/main.js?{\"page\":\"pages%2Ftask%2FtaskSearch\"}":
+/*!******************************************************************!*\
+  !*** D:/xiaoA-vuex/main.js?{"page":"pages%2Ftask%2FtaskSearch"} ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../xiaoA-vuex/pages.json");
+
+var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
+var _taskSearch = _interopRequireDefault(__webpack_require__(/*! ./pages/task/taskSearch.vue */ "../../../../xiaoA-vuex/pages/task/taskSearch.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+createPage(_taskSearch.default);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ "./node_modules/@dcloudio/uni-mp-weixin/dist/index.js")["createPage"]))
+
+/***/ }),
+
+/***/ "../../../../xiaoA-vuex/main.js?{\"page\":\"pages%2Ftemplate%2Ftem_detial%2Ftem_de\"}":
+/*!*******************************************************************************!*\
+  !*** D:/xiaoA-vuex/main.js?{"page":"pages%2Ftemplate%2Ftem_detial%2Ftem_de"} ***!
+  \*******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../xiaoA-vuex/pages.json");
+
+var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
+var _tem_de = _interopRequireDefault(__webpack_require__(/*! ./pages/template/tem_detial/tem_de.vue */ "../../../../xiaoA-vuex/pages/template/tem_detial/tem_de.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+createPage(_tem_de.default);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ "./node_modules/@dcloudio/uni-mp-weixin/dist/index.js")["createPage"]))
+
+/***/ }),
+
+/***/ "../../../../xiaoA-vuex/main.js?{\"page\":\"pages%2Ftemplate%2Ftem_verify%2Ftem_verify\"}":
+/*!***********************************************************************************!*\
+  !*** D:/xiaoA-vuex/main.js?{"page":"pages%2Ftemplate%2Ftem_verify%2Ftem_verify"} ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../xiaoA-vuex/pages.json");
+
+var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
+var _tem_verify = _interopRequireDefault(__webpack_require__(/*! ./pages/template/tem_verify/tem_verify.vue */ "../../../../xiaoA-vuex/pages/template/tem_verify/tem_verify.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+createPage(_tem_verify.default);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ "./node_modules/@dcloudio/uni-mp-weixin/dist/index.js")["createPage"]))
+
+/***/ }),
+
+/***/ "../../../../xiaoA-vuex/main.js?{\"page\":\"pages%2Ftemplate%2Ftemlist%2Ftemlist\"}":
+/*!*****************************************************************************!*\
+  !*** D:/xiaoA-vuex/main.js?{"page":"pages%2Ftemplate%2Ftemlist%2Ftemlist"} ***!
+  \*****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../xiaoA-vuex/pages.json");
+
+var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
+var _temlist = _interopRequireDefault(__webpack_require__(/*! ./pages/template/temlist/temlist.vue */ "../../../../xiaoA-vuex/pages/template/temlist/temlist.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+createPage(_temlist.default);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ "./node_modules/@dcloudio/uni-mp-weixin/dist/index.js")["createPage"]))
+
+/***/ }),
+
+/***/ "../../../../xiaoA-vuex/main.js?{\"page\":\"pages%2Ftemplate%2Ftemplate\"}":
+/*!********************************************************************!*\
+  !*** D:/xiaoA-vuex/main.js?{"page":"pages%2Ftemplate%2Ftemplate"} ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../xiaoA-vuex/pages.json");
+
+var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
+var _template = _interopRequireDefault(__webpack_require__(/*! ./pages/template/template.vue */ "../../../../xiaoA-vuex/pages/template/template.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+createPage(_template.default);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ "./node_modules/@dcloudio/uni-mp-weixin/dist/index.js")["createPage"]))
+
+/***/ }),
+
+/***/ "../../../../xiaoA-vuex/pages.json":
+/*!********************************!*\
+  !*** D:/xiaoA-vuex/pages.json ***!
+  \********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4445,10 +4444,10 @@ createPage(_template.default);
 
 /***/ }),
 
-/***/ "../../../../xiaoAweb - demo/store/getters.js":
-/*!*******************************************!*\
-  !*** D:/xiaoAweb - demo/store/getters.js ***!
-  \*******************************************/
+/***/ "../../../../xiaoA-vuex/store/getters.js":
+/*!**************************************!*\
+  !*** D:/xiaoA-vuex/store/getters.js ***!
+  \**************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4488,22 +4487,22 @@ getters;exports.default = _default;
 
 /***/ }),
 
-/***/ "../../../../xiaoAweb - demo/store/index.js":
-/*!*****************************************!*\
-  !*** D:/xiaoAweb - demo/store/index.js ***!
-  \*****************************************/
+/***/ "../../../../xiaoA-vuex/store/index.js":
+/*!************************************!*\
+  !*** D:/xiaoA-vuex/store/index.js ***!
+  \************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
 var _vuex = _interopRequireDefault(__webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js"));
-var _user = _interopRequireDefault(__webpack_require__(/*! ./moduls/user.js */ "../../../../xiaoAweb - demo/store/moduls/user.js"));
-var _indexInfo = _interopRequireDefault(__webpack_require__(/*! ./moduls/indexInfo.js */ "../../../../xiaoAweb - demo/store/moduls/indexInfo.js"));
-var _getters = _interopRequireDefault(__webpack_require__(/*! ./getters.js */ "../../../../xiaoAweb - demo/store/getters.js"));
-var _task = _interopRequireDefault(__webpack_require__(/*! ./moduls/task.js */ "../../../../xiaoAweb - demo/store/moduls/task.js"));
-var _crm = _interopRequireDefault(__webpack_require__(/*! ./moduls/crm.js */ "../../../../xiaoAweb - demo/store/moduls/crm.js"));
-var _recording = _interopRequireDefault(__webpack_require__(/*! ./moduls/recording.js */ "../../../../xiaoAweb - demo/store/moduls/recording.js"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _user = _interopRequireDefault(__webpack_require__(/*! ./moduls/user.js */ "../../../../xiaoA-vuex/store/moduls/user.js"));
+var _indexInfo = _interopRequireDefault(__webpack_require__(/*! ./moduls/indexInfo.js */ "../../../../xiaoA-vuex/store/moduls/indexInfo.js"));
+var _getters = _interopRequireDefault(__webpack_require__(/*! ./getters.js */ "../../../../xiaoA-vuex/store/getters.js"));
+var _task = _interopRequireDefault(__webpack_require__(/*! ./moduls/task.js */ "../../../../xiaoA-vuex/store/moduls/task.js"));
+var _crm = _interopRequireDefault(__webpack_require__(/*! ./moduls/crm.js */ "../../../../xiaoA-vuex/store/moduls/crm.js"));
+var _recording = _interopRequireDefault(__webpack_require__(/*! ./moduls/recording.js */ "../../../../xiaoA-vuex/store/moduls/recording.js"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 _vue.default.use(_vuex.default);
 
 var store = new _vuex.default.Store({
@@ -4521,22 +4520,22 @@ store;exports.default = _default;
 
 /***/ }),
 
-/***/ "../../../../xiaoAweb - demo/store/moduls/crm.js":
-/*!**********************************************!*\
-  !*** D:/xiaoAweb - demo/store/moduls/crm.js ***!
-  \**********************************************/
+/***/ "../../../../xiaoA-vuex/store/moduls/crm.js":
+/*!*****************************************!*\
+  !*** D:/xiaoA-vuex/store/moduls/crm.js ***!
+  \*****************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _crm = __webpack_require__(/*! @/api/crm.js */ "../../../../xiaoAweb - demo/api/crm.js");
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _crm = __webpack_require__(/*! @/api/crm.js */ "../../../../xiaoA-vuex/api/crm.js");
 
 
 
 
 
-var _auth = __webpack_require__(/*! @/utils/auth.js */ "../../../../xiaoAweb - demo/utils/auth.js");
-var _momentMin = _interopRequireDefault(__webpack_require__(/*! @/common/moment.min.js */ "../../../../xiaoAweb - demo/common/moment.min.js"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _auth = __webpack_require__(/*! @/utils/auth.js */ "../../../../xiaoA-vuex/utils/auth.js");
+var _momentMin = _interopRequireDefault(__webpack_require__(/*! @/common/moment.min.js */ "../../../../xiaoA-vuex/common/moment.min.js"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 var state = {
   crmList: [],
   crmQueryCriteria: null,
@@ -4666,24 +4665,24 @@ var actions = {
 
 /***/ }),
 
-/***/ "../../../../xiaoAweb - demo/store/moduls/indexInfo.js":
-/*!****************************************************!*\
-  !*** D:/xiaoAweb - demo/store/moduls/indexInfo.js ***!
-  \****************************************************/
+/***/ "../../../../xiaoA-vuex/store/moduls/indexInfo.js":
+/*!***********************************************!*\
+  !*** D:/xiaoA-vuex/store/moduls/indexInfo.js ***!
+  \***********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _indexInfo = __webpack_require__(/*! @/api/indexInfo.js */ "../../../../xiaoAweb - demo/api/indexInfo.js");
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _indexInfo = __webpack_require__(/*! @/api/indexInfo.js */ "../../../../xiaoA-vuex/api/indexInfo.js");
 
 var state = {
   indexInfo: null, //首页信息
-  childrenArray: null, //子账号
-  userids: null, //userids
-  flownames: null, //话术模板名称
-  callflowIds: null, //话术模板id
-  showPhones: null, //主叫号
-  mais: null, //AI数
+  childrenArray: [], //子账号
+  userids: [], //userids
+  flownames: [], //话术模板名称
+  callflowIds: [], //话术模板id
+  showPhones: [], //主叫号
+  mais: [], //AI数
   queryIndex: null };
 
 
@@ -4795,15 +4794,15 @@ var actions = {
 
 /***/ }),
 
-/***/ "../../../../xiaoAweb - demo/store/moduls/recording.js":
-/*!****************************************************!*\
-  !*** D:/xiaoAweb - demo/store/moduls/recording.js ***!
-  \****************************************************/
+/***/ "../../../../xiaoA-vuex/store/moduls/recording.js":
+/*!***********************************************!*\
+  !*** D:/xiaoA-vuex/store/moduls/recording.js ***!
+  \***********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _recording = __webpack_require__(/*! @/api/recording.js */ "../../../../xiaoAweb - demo/api/recording.js");
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _recording = __webpack_require__(/*! @/api/recording.js */ "../../../../xiaoA-vuex/api/recording.js");
 
 
 
@@ -4888,15 +4887,15 @@ var actions = {
 
 /***/ }),
 
-/***/ "../../../../xiaoAweb - demo/store/moduls/task.js":
-/*!***********************************************!*\
-  !*** D:/xiaoAweb - demo/store/moduls/task.js ***!
-  \***********************************************/
+/***/ "../../../../xiaoA-vuex/store/moduls/task.js":
+/*!******************************************!*\
+  !*** D:/xiaoA-vuex/store/moduls/task.js ***!
+  \******************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _task = __webpack_require__(/*! @/api/task.js */ "../../../../xiaoAweb - demo/api/task.js");
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _task = __webpack_require__(/*! @/api/task.js */ "../../../../xiaoA-vuex/api/task.js");
 
 
 
@@ -4915,7 +4914,7 @@ var state = {
   taskDirectives: '',
   taskFail: 0,
   taskQueryCriteria: null,
-  addTaskFlag: false,
+  addTaskFlag: true,
   loadStatus: 0 };
 
 var mutations = {
@@ -5137,16 +5136,17 @@ function directivesHandler(_ref17, reqData, reqHandler) {var commit = _ref17.com
 
 /***/ }),
 
-/***/ "../../../../xiaoAweb - demo/store/moduls/user.js":
-/*!***********************************************!*\
-  !*** D:/xiaoAweb - demo/store/moduls/user.js ***!
-  \***********************************************/
+/***/ "../../../../xiaoA-vuex/store/moduls/user.js":
+/*!******************************************!*\
+  !*** D:/xiaoA-vuex/store/moduls/user.js ***!
+  \******************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _user = __webpack_require__(/*! @/api/user.js */ "../../../../xiaoAweb - demo/api/user.js");
-var _auth = __webpack_require__(/*! @/utils/auth.js */ "../../../../xiaoAweb - demo/utils/auth.js");
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _user = __webpack_require__(/*! @/api/user.js */ "../../../../xiaoA-vuex/api/user.js");
+var _auth = __webpack_require__(/*! @/utils/auth.js */ "../../../../xiaoA-vuex/utils/auth.js");
+var _demo = _interopRequireDefault(__webpack_require__(/*! @/utils/demo.js */ "../../../../xiaoA-vuex/utils/demo.js"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
 var state = {
   token: (0, _auth.getToken)(),
@@ -5178,15 +5178,16 @@ var actions = {
   },
   // 登出
   logout: function logout(_ref2) {var commit = _ref2.commit,state = _ref2.state;
+    return new Promise(function (resolve, reject) {
+      (0, _user.logout)((0, _auth.getToken)()).then(function (res) {
+        resolve(res);
+        (0, _auth.removeToken)();
+        (0, _auth.yh_removeStorage)('usertype');
+        commit('SET_TOKEN', '');
+        uni.navigateTo({
+          url: '/pages/login/login' });
 
-    (0, _user.logout)((0, _auth.getToken)()).then(function (res) {
-      console.log(res, 'deng');
-      (0, _auth.removeToken)();
-      (0, _auth.yh_removeStorage)('usertype');
-      commit('SET_TOKEN', '');
-      uni.navigateTo({
-        url: '/pages/login/login' });
-
+      });
     });
   },
   // 初始化信息
@@ -5226,10 +5227,10 @@ var actions = {
 
 /***/ }),
 
-/***/ "../../../../xiaoAweb - demo/utils/auth.js":
-/*!****************************************!*\
-  !*** D:/xiaoAweb - demo/utils/auth.js ***!
-  \****************************************/
+/***/ "../../../../xiaoA-vuex/utils/auth.js":
+/*!***********************************!*\
+  !*** D:/xiaoA-vuex/utils/auth.js ***!
+  \***********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5239,7 +5240,6 @@ var actions = {
 }
 
 function removeToken() {
-  console.log('reomi');
   return uni.removeStorageSync('access_token');
 }
 
@@ -5261,6 +5261,19 @@ function yh_removeStorage(key) {
   return uni.removeStorageSync(key);
 }
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ "./node_modules/@dcloudio/uni-mp-weixin/dist/index.js")["default"]))
+
+/***/ }),
+
+/***/ "../../../../xiaoA-vuex/utils/demo.js":
+/*!***********************************!*\
+  !*** D:/xiaoA-vuex/utils/demo.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.name = exports.default = void 0;var _default = function _default(ss, dss) {return "Hello world";};exports.default = _default;
+var name = "Lydia";exports.name = name;
 
 /***/ }),
 

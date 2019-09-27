@@ -17,7 +17,7 @@ const state={
 	taskDirectives:'',
 	taskFail:0,
 	taskQueryCriteria:null,
-	addTaskFlag:false,
+	addTaskFlag:true,
 	loadStatus:0
 }
 const mutations={

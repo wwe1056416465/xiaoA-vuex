@@ -3,7 +3,6 @@ export function getToken(){
 }
 
 export function removeToken(){
-	console.log('reomi')
 	return uni.removeStorageSync('access_token');
 }
 

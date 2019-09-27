@@ -32,7 +32,9 @@
 		methods: {
 			// 退出登入
 			loginout() {
-				this.$store.dispatch('user/logout')
+				this.$store.dispatch('user/logout').then(res=>{
+					this.$store.dispatch('task/setAddTaskFalg',true)
+				})
 			
 			},
 		}
