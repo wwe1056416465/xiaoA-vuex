@@ -136,7 +136,9 @@ export default {
 			let	page= 1
 			let	limit= 5
 			this.$store.dispatch('crm/crmQuery',data)
+			console.log('ok');
 			this.$store.dispatch('crm/getCrmHistory',{page,limit,data,access_token}).then(res=>{
+				console.log('ok');
 				if(res.data.data.length < 5){
 					this.$store.dispatch('task/loadMoreStatus',2)
 				}

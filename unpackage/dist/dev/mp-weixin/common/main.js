@@ -84,6 +84,7 @@ __webpack_require__.r(__webpack_exports__);
 var _auth = __webpack_require__(/*! @/utils/auth.js */ "../../../../xiaoA-vuex/utils/auth.js"); //
 var _default = {
   onLaunch: function onLaunch() {
+    console.log('sdsd');
     var hasToken = (0, _auth.getToken)();
     if (!hasToken) {
       // 判断token是否存在,存在表示已经登入,不存在为未登入

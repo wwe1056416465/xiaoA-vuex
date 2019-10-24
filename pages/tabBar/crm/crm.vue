@@ -96,7 +96,7 @@
 			}
 		},
 
-		onLoad() {
+		onShow() {
 			this.loadData('refresh');
 		},
 

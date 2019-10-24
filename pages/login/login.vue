@@ -228,6 +228,10 @@
 				isCommit:false
 			};
 		},
+		onShow(){
+			console.log(this.$store.state);
+			this.$store.dispatch('task/setAddTaskFalg',true)
+		},
 		methods: {
 			// 复选框勾选
 			checkboxChange() {

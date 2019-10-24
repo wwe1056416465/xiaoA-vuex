@@ -9,7 +9,6 @@ const app = new Vue({
 	store,
 	...App,
 	created() {
-		
 
 	}
 })

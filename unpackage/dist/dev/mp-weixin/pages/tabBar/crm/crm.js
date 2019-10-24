@@ -196,7 +196,7 @@ var _api = _interopRequireDefault(__webpack_require__(/*! ../../../common/api.js
     } },
 
 
-  onLoad: function onLoad() {
+  onShow: function onShow() {
     this.loadData('refresh');
   },
 

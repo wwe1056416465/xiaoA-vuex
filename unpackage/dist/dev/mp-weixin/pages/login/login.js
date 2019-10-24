@@ -328,6 +328,10 @@ var _auth = __webpack_require__(/*! @/utils/auth.js */ "../../../../xiaoA-vuex/u
       isCommit: false };
 
   },
+  onShow: function onShow() {
+    console.log(this.$store.state);
+    this.$store.dispatch('task/setAddTaskFalg', true);
+  },
   methods: {
     // 复选框勾选
     checkboxChange: function checkboxChange() {

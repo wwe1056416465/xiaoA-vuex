@@ -3,6 +3,7 @@
 	import {getToken} from '@/utils/auth.js'
 	export default {
 		onLaunch: function () {
+			console.log('sdsd')
 			const hasToken=getToken()
 			if(!hasToken){
 				// 判断token是否存在,存在表示已经登入,不存在为未登入

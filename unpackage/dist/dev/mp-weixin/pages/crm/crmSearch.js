@@ -236,7 +236,9 @@ var _api = _interopRequireDefault(__webpack_require__(/*! ../../common/api.js */
       var page = 1;
       var limit = 5;
       this.$store.dispatch('crm/crmQuery', data);
+      console.log('ok');
       this.$store.dispatch('crm/getCrmHistory', { page: page, limit: limit, data: data, access_token: access_token }).then(function (res) {
+        console.log('ok');
         if (res.data.data.length < 5) {
           _this.$store.dispatch('task/loadMoreStatus', 2);
         }

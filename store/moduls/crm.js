@@ -43,9 +43,11 @@ const mutations={
 const actions={
 	// 获取crm列表
 	getCrmHistory({commit,state},reqData){
+		console.log(reqData);
 		return new Promise((resolve,reject)=>{
+			console.log('state');
 			reqCrmHistory(reqData).then(res=>{
-				console.log(state);
+				console.log(res);
 				for (let i = 0, len = res.data.data.length; i < len; i++) {
 					if (res.data.data[i].tag) {
 						res.data.data[i].tag = res.data.data[i].tag.split('|');
@@ -54,6 +56,7 @@ const actions={
 				let crmList=state.crmList
 				crmList=crmList.concat(res.data.data)
 				commit('SET_CRM_LIST',crmList)
+				console.log(res);
 				resolve(res)
 			})
 		})

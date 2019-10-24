@@ -105,7 +105,7 @@ function resHandle(res, resolve) {
 
       } });
 
-  } else if (res.data.code === 1) {
+  } else if (res.data.code === 1 || res.data.code === 1002) {
     uni.showModal({
       content: res.data.msg,
       confirmText: '知道了',
@@ -4152,7 +4152,6 @@ var app = new _vue.default(_objectSpread({
 _App.default, {
   created: function created() {
 
-
   } }));
 
 createApp(app).$mount();
@@ -4573,9 +4572,11 @@ var mutations = {
 var actions = {
   // 获取crm列表
   getCrmHistory: function getCrmHistory(_ref, reqData) {var commit = _ref.commit,state = _ref.state;
+    console.log(reqData);
     return new Promise(function (resolve, reject) {
+      console.log('state');
       (0, _crm.reqCrmHistory)(reqData).then(function (res) {
-        console.log(state);
+        console.log(res);
         for (var i = 0, len = res.data.data.length; i < len; i++) {
           if (res.data.data[i].tag) {
             res.data.data[i].tag = res.data.data[i].tag.split('|');
@@ -4584,6 +4585,7 @@ var actions = {
         var crmList = state.crmList;
         crmList = crmList.concat(res.data.data);
         commit('SET_CRM_LIST', crmList);
+        console.log(res);
         resolve(res);
       });
     });

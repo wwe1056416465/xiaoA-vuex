@@ -95,7 +95,7 @@ function resHandle(res,resolve){
 				})
 			}
 		});	
-	}else if(res.data.code===1){
+	}else if(res.data.code===1||res.data.code===1002){
 			uni.showModal({
 			content: res.data.msg,
 			confirmText:'知道了',
