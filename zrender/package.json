@@ -26,7 +26,7 @@
     "commander": "2.11.0",
     "fs-extra": "4.0.2",
     "jsdiff": "1.1.1",
-    "rollup": "0.50.0",
+    "rollup": "3.29.5",
     "rollup-plugin-uglify": "2.0.1"
   },
   "__npminstall_done": "Tue Apr 16 2019 15:50:35 GMT+0800 (GMT+08:00)",
